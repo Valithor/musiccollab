@@ -1,0 +1,19 @@
+query Room($id: Int!) {
+  room(id: $id) {
+    ...RoomSnippet
+    name
+    userRooms {
+      userId
+      user {
+        username
+        location
+        id
+      }
+    }
+    roomSounds {
+      roomId
+      track
+      trackId
+    }
+  }
+}

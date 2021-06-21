@@ -1,0 +1,7 @@
+mutation UpdateTrack($roomId: Int!, $trackId: Int!, $track: [String!]!) {
+  updateTrack(roomId: $roomId, trackId: $trackId, track: $track){
+    roomId
+    track
+    trackId
+  }
+}

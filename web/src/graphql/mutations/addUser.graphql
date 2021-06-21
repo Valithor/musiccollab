@@ -1,0 +1,3 @@
+mutation AddUser($usernameOrEmail: String!, $roomId: Int!) {
+  addUser(usernameOrEmail: $usernameOrEmail, roomId: $roomId)
+}

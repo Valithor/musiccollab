@@ -1,0 +1,7 @@
+subscription UserChanges {
+  userChanges {
+    id
+    username
+    location
+  }
+}

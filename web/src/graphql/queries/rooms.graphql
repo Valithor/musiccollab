@@ -1,0 +1,16 @@
+query Rooms($limit: Int!, $cursor: String) {
+  rooms(limit: $limit, cursor: $cursor) {
+    hasMore
+    rooms {
+      ...RoomSnippet
+      name
+      userRooms {
+        userId
+        user {
+          username
+          id
+        }
+      }
+    }
+  }
+}

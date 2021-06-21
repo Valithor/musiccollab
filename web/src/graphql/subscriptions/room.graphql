@@ -1,0 +1,19 @@
+subscription RoomChanges{
+  roomChanges {
+    ...RoomSnippet
+    name
+    userRooms {
+      userId
+      user {
+        username
+        location
+        id
+      }
+    }
+    roomSounds {
+      roomId
+      track
+      trackId
+    }
+  }
+}

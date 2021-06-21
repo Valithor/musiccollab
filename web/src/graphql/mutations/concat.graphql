@@ -1,0 +1,3 @@
+mutation Concat($roomId: Int!) {
+  concat(roomId: $roomId)
+}

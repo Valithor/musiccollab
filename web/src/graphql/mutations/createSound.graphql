@@ -1,0 +1,6 @@
+mutation CreateSound($input: String!) {
+  createSound(input: $input) {
+    path
+    id
+  }
+}

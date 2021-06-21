@@ -1,0 +1,9 @@
+query Sounds {
+  sounds {
+    sounds {
+      id
+      path
+    }
+    length
+  }
+}
